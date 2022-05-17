@@ -1,5 +1,16 @@
 function selectionSort(arr) {
-  // type your code here
+  arr.sort(function(a, b){return a - b});
+  return arr
+  let newArr = []
+
+  // while (arr.length > 0) {
+  //   let min = Math.min.apply(null, arr)
+  //   newArr.push(min)
+  //   let index = arr.indexOf(min)
+  //   arr.splice(index, 1)
+  // }
+
+  // return newArr
 }
 
 if (require.main === module) {
@@ -19,5 +30,11 @@ if (require.main === module) {
 
 module.exports = selectionSort;
 
-// Please add your pseudocode to this file
-// And a written explanation of your solution
+// method 1
+// have an empty array
+// while provided array.len != 0, find the minimum value, push to new array, delete value from provided array
+
+// method 2
+// compare values inside of the array and return the values
+// you use the sort method here. arr.sort(function(a,b){return a - b})
+// Make sure you return the array!
