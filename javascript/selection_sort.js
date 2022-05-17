@@ -1,16 +1,16 @@
 function selectionSort(arr) {
-  arr.sort(function(a, b){return a - b});
-  return arr
+  // arr.sort(function(a, b){return a - b});
+  // return arr
   let newArr = []
 
-  // while (arr.length > 0) {
-  //   let min = Math.min.apply(null, arr)
-  //   newArr.push(min)
-  //   let index = arr.indexOf(min)
-  //   arr.splice(index, 1)
-  // }
+  while (arr.length > 0) {
+    let min = Math.min.apply(null, arr)
+    newArr.push(min)
+    let index = arr.indexOf(min)
+    arr.splice(index, 1)
+  }
 
-  // return newArr
+  return newArr
 }
 
 if (require.main === module) {
